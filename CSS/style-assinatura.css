@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Nasa;
+  src: url(/fonts/NasalizationRg-Regular\ 400.ttf)
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url(/fonts/Geometria.ttf)
+}
+
+body {
+  overflow: hidden;
+}
+
+.colunas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-formulario {
+  color: #ffffff;
+  font-weight: 300;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 24px;
+  font-family: Geometria;
+}
+
+.aviso {
+  font-size: 14px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: Geometria;
+}
+
+input {
+  height: 30px;
+  width: 350px;
+  margin-top: 5px;
+  border-radius: 8px;
+  padding-left: 10px;
+  color: black;
+  border: 0.3px solid #0e4e91;
+  font-family: Geometria;
+}
+
+input:hover {
+  border: 0.4px solid #85bffc;
+  transition: all .4s ease-in-out;
+  transform: scale(1.01);
+}
+
+input:focus {
+  background-color: #b5c6e4;
+}
+
+::placeholder {
+  color: black;
+  font-size: 15px;
+  font-family: Geometria;
+}
+
+.assinatura-final {
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 5px 5px 5px 5px;
+  margin-left: 70px;
+  font-family: Geometria;
+}
+
+/* .btn-copiar {
+  background: linear-gradient(356deg, #6cc5e4 0%, rgba(14, 78, 145, 1) 73%, rgb(7, 43, 78) 100%);
+  color: #ffffff;
+  border: 0.4px;
+  border-radius: 10px;
+  width: 360px;
+  height: 40px;
+  letter-spacing: -1px;
+  font-family: Geometria;
+} */
+
+.btn-copiar:hover {
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  transform: scale(1.01);
+}
+
+.areaDemo {
+  padding-top: 15px;
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}

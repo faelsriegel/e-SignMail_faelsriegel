@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Nasa;
+  src: url(/fonts/NasalizationRg-Regular\ 400.ttf)
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url(/fonts/Geometria.ttf)
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin-top: -30px;
+  overflow: hidden;
+  background: linear-gradient(86deg, rgb(9, 27, 41) 40%, rgba(14, 78, 145, 0.8) 73%, rgba(31, 121, 213, 0.5) 100%) url("img/background.jpg");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  height: px;
+  background-position: center;
+  color: #ffffff;
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
+  padding-top: 10px;
+}
+
+h1 {
+  font-family: Geometria;
+  padding-top: 60px;
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 1.2;
+  text-align: left;
+}
+
+h2 {
+  font-family: Nasa;
+  padding-bottom: 60px;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.imagem {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.email-icon {
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 0px;
+}
+
+.titulo p {
+  text-align: left;
+  font-weight: 200;
+  font-size: 18px;
+  margin-top: -10px;
+}
+
+.logo {
+  margin-left: 20px;
+  background-color: #142b3b;
+  width: 220px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.logo:hover {
+  border: 1px solid #142b3b;
+  transition: all .4s ease-in-out;
+  transform: scale(1.05);
+}
+
+.empresas div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empresas img {
+  max-width: 120px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.titulo-espaco {
+  margin-right: 80px;
+}
+
+.rodape {
+  text-align: right;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  font-size: 62.5%;
+
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+body {
+  background-color: #142b3b;
+  color: #fff;
+  padding: 8rem;
+  background-image: url("/img/blue-green-glow.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+  }
+}
