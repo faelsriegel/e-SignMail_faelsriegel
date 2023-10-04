@@ -8,14 +8,14 @@ function capturar() {
   capturando = document.getElementById("campoCargo").value;
   document.getElementById("outCargo").innerHTML = capturando;
 
-  capturando = document.getElementById("campoTelefone").value;
-  document.getElementById("outTelefone").innerHTML = capturando;
+  // capturando = document.getElementById("campoTelefone").value;
+  // document.getElementById("outTelefone").innerHTML = capturando;
 
   capturando = document.getElementById("campoEmail").value;
   document.getElementById("outEmail").innerHTML = capturando;
 
-  capturando = document.getElementById("campoSite").value;
-  document.getElementById("outSite").innerHTML = capturando;
+  // capturando = document.getElementById("campoSite").value;
+  // document.getElementById("outSite").innerHTML = capturando;
 }
 
 // encontra o botao
