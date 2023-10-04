@@ -28,7 +28,7 @@
 
     .cargo {
       font-size: 14px;
-      color: #0193D5;
+      color: #83cdf0;
     }
 
     .email {
@@ -36,19 +36,19 @@
       color: #132A3A;
     }
 
-    .telefone {
+    /* .telefone {
       font-size: 14px;
       color: #132A3A;
-    }
+    } */
 
     .website {
       font-size: 14px;
-      color: #0193D5;
+      color: #83cdf0;
     }
 
     .icon {
       vertical-align: middle;
-      margin-right: 5px;
+      margin-right: 2px;
     }
   </style>
   <link rel="stylesheet" type="text/css" href="CSS/style-assinatura.css">
@@ -75,9 +75,9 @@
         <div>
           <input type="text" oninput="capturar()" class="" id="campoEmail" aria-label="" placeholder="E-mail">
         </div>
-        <div>
+        <!-- <div>
           <input type="tel" oninput="capturar()" class="" id="campoTelefone" aria-label="" placeholder="Telefone">
-        </div>
+        </div> -->
 
         <div class="areaDemo">
           <button data-text="Awesome" class="button" id="btnCopy1">
@@ -95,7 +95,7 @@
       <td>
         <table cellpadding="0" style="border-collapse:collapse">
           <tr>
-            <td valign="top" style="margin:0.1px;padding:0;">
+            <td valign="top" style="margin:1px;padding: 2px;">
               <a href="https://www.stratuscloud.com.br/">
                 <img src="https://www.stratuscloud.com.br/wp-content/uploads/2023/10/favicon2.webp"
                   width="160" alt="Stratus Cloud" style="display:block;">
@@ -111,7 +111,7 @@
                 <tr>
                   <td style="margin:0.1px;padding:0 0 5px;font:14.9px/18.9px Verdana, Geneva, sans-serif;color:#132A3A;">
                     <span>
-                      <span id="outCargo" style="color:#0193D5;">Cargo - Departamento</span>
+                      <span id="outCargo" style="color:#22b0f1;">Cargo - Departamento</span>
                     </span>
                   </td>
                 </tr>
@@ -119,22 +119,22 @@
                   <td style="margin:0.1px;padding:2px 0;font:14.9px/18.9px Verdana, Geneva, sans-serif;color:#132A3A;">
                     <span style="color:#132A3A;font-weight:600;">email: </span>
                     <a href="mailto:rafael@stratuscloud.com.br" target="_blank"
-                      style="color:#0193D5;text-decoration:none;font-family:Verdana, Geneva, sans-serif;"
+                      style="color:#22b0f1;text-decoration:none;font-family:Verdana, Geneva, sans-serif;"
                       id="outEmail"> email corporativo</a>
                   </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td style="margin:0.1px;padding:2px 0;font:14.9px/18.9px Verdana, Geneva, sans-serif;color:#132A3A;">
                     <span style="color:#132A3A;font-weight:600;">telefone: </span>
-                    <a style="color:#0193D5;text-decoration:none;font-family:Verdana, Geneva, sans-serif;"
+                    <a style="color:#22b0f1;text-decoration:none;font-family:Verdana, Geneva, sans-serif;"
                       id="outTelefone"> telefone corporativo</a>
                   </td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td style="margin:0.1px;padding:2px 0;font:14.9px/18.9px Verdana, Geneva, sans-serif;color:#132A3A;">
                     <span style="color:#132A3A;font-weight:600;">website: </span>
                     <a href="https://www.stratuscloud.com.br/" target="_blank"
-                      style="color:#0193D5;text-decoration:none;font-family:Verdana, Geneva, sans-serif;">stratuscloud.com.br</a>
+                      style="color:#22b0f1;text-decoration:none;font-family:Verdana, Geneva, sans-serif;">stratuscloud.com.br</a>
                   </td>
                 </tr>
               </table>
@@ -288,12 +288,12 @@
               const nome = document.getElementById('campoNome').value;
               const cargo = document.getElementById('campoCargo').value;
               const email = document.getElementById('campoEmail').value;
-              const telefone = document.getElementById('campoTelefone').value;
+              // const telefone = document.getElementById('campoTelefone').value;
         
               document.getElementById('outNome').textContent = nome || 'Nome Completo';
               document.getElementById('outCargo').textContent = cargo ? `${cargo}` : 'Cargo - Departamento';
               document.getElementById('outEmail').textContent = email ? `${email}` : 'email@exemplo.com';
-              document.getElementById('outTelefone').textContent = telefone ? `${telefone}` : 'Telefone';
+              // document.getElementById('outTelefone').textContent = telefone ? `${telefone}` : 'Telefone';
         
               const modeloEmailFinal = document.getElementById('modelo-email-final');
               modeloEmailFinal.style.display = 'block';
