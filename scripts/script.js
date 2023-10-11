@@ -49,5 +49,43 @@ function copiar() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleSwitch = document.getElementById("toggleSwitch");
+  const linkAssinatura = document.getElementById("linkAssinatura");
+  const linkCobranca = document.getElementById("linkCobranca");
 
+  // Verifica a classe do switch para definir o estado padrão
+  if (toggleSwitch.classList.contains("leftDefault") && window.location.href.includes("assinatura")) {
+    // Defina a esquerda como padrão para a página "assinatura"
+    toggleSwitch.checked = false;
+  } else if (toggleSwitch.classList.contains("rightDefault") && window.location.href.includes("cobranca")) {
+    // Defina a direita como padrão para a página "cobranca"
+    toggleSwitch.checked = true;
+  }
 
+  // Evento de clique na seta esquerda
+  const leftArrow = document.querySelector(".left");
+  leftArrow.addEventListener("click", function () {
+    history.back(); // Volta para a página anterior
+  });
+
+  // Evento de clique no botão Voltar
+  const voltarBotao = document.getElementById("voltar");
+  voltarBotao.addEventListener("click", function () {
+    history.back(); // Volta para a página anterior
+  });
+
+  // Evento de clique na seta esquerda
+  const rightArrow = document.querySelector(".right");
+  rightArrow.addEventListener("click", function () {
+    linkCobranca.click(); // Redireciona para a página de cobrança // Volta para a página anterior
+  });
+  // Evento de mudança no switch para redirecionar para a página alternativa
+  toggleSwitch.addEventListener("change", function () {
+    if (toggleSwitch.checked && window.location.href.includes("Assinatura")) {
+      linkCobranca.click(); // Redireciona para a página de cobrança
+    } else if (!toggleSwitch.checked && window.location.href.includes("cobranca")) {
+      linkAssinatura.click(); // Redireciona para a página de assinatura
+    }
+  });
+});

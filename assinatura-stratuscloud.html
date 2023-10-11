@@ -20,10 +20,11 @@
 <body>
   <!-- Preencha os dados -->
   <div class="titulo-formulario">
-    <h3> Preencha os Dados Abaixo:</h3>
+    <h3>Gerador de Assinaturas - Stratus Cloud <br></h3>
   </div>
   <div class="colunas">
     <div class="">
+      <h4>Preencha os Dados Abaixo:</h4>
       <div class>
         <div>
           <input type="text" oninput="capturar()" class="" id="campoNome" aria-label="" placeholder="Nome">
@@ -46,7 +47,7 @@
         </div> -->
 
         <div>
-          <p class="aviso">Verifique a assinatura ao lado e clique no botão abaixo. <br> Cole (CTRL+V) no campo
+          <p class="aviso">Verifique a assinatura ao lado e clique no botão abaixo. <br> Cole no campo
             assinatura em seu gerenciador de email.</p>
         </div>
 
@@ -59,16 +60,28 @@
         </button>
           
         </div>
-      </div>
-    </div>
 
+</div>
+</div>
+
+<!-- Toggle switch com classe "leftDefault" -->
+<label class="switch">
+  <input type="checkbox" class="cb leftDefault" id="toggleSwitch">
+  <span class="toggle">
+    <span class="left"><-</span>
+    <span class="right">-></span>
+  </span>
+</label>
+
+<!-- Botão de voltar -->
+<button id="voltar" style="display: none;">Voltar</button>
+<!-- Link para o HTML alternativo "cobranca" -->
+<a href="cobranca-stratuscloud.html" id="linkCobranca" style="display: none;"></a>
     <section width:="30%" class="assinatura-final" id='modelo-email-final'>
-
-      <!-- modelo email padrao -->
-      <table cellpadding="0" cellspacing="0" style="margin:10px; vertical-align: middle" class="conteudoTabela">
-
+      <!-- INICIO modelo email padrao -->
+<!-- **************************************************************************************************** -->      
+<table cellpadding="0" cellspacing="0" style="margin:10px; vertical-align: middle" class="conteudoTabela">
         <td>
-
           <table cellpadding="0" style="border-collapse:collapse">
           <tr>
             <td valign="top" style="margin:0.1px;padding:0;">
@@ -92,7 +105,7 @@
             <tr>
               <td style="margin:0.1px;padding:2px 0;font:14.9px/18.9px Verdana, Geneva, sans-serif;color:#132A3A;">
                 <span  style="color:#132A3A;font-weight:600;">email: 
-                </span id="outEmail"><a href="mailto:atendimento@stratuscloud.com.br" target="_blank" style="color:#22b0f1;text-decoration:none;font-family:Verdana, Geneva, sans-serif;" id="outEmail"> email corporativo</a>
+                </span id="outEmail"><a href="mailto:contato@stratuscloud.com.br" target="_blank" style="color:#22b0f1;text-decoration:none;font-family:Verdana, Geneva, sans-serif;" id="outEmail"> email corporativo</a>
               </td>
             </tr>
             <tr>
@@ -110,26 +123,31 @@
                 <td id="m_-7587309070148421964layout-row-padding11915" valign="top" style="padding:5px"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-size:14px;min-width:100%"><tbody><tr><td><table width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;font-size:14px;min-width:100%"><tbody><tr><td width="400" align="left"> <center style="margin:0;outline:none;padding:0;font-size:0px"> <table class="m_-7587309070148421964_ac_social_table" cellspacing="0" cellpadding="0" align="left" style="border-collapse:collapse;font-size:0;min-width:auto!important;margin:auto!important;display:inline-block!important;text-align:left!important"><tbody><tr><td align="center" valign="middle" width="34" style="display:inline-block!important;font-size:0;width:34px!important">
                   
                   <div style="margin:0;outline:none;padding:0"><a href="https://www.linkedin.com/in/rafael-stuepp-riegel/" id="m_-7587309070148421964youtube" style="margin:0;outline:none;padding:0;color:#045fb4" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://maverodigital.lt.acemlnb.com/Prod/link-tracker?redirectUrl%3DaHR0cHMlM0ElMkYlMkZ3d3cueW91dHViZS5jb20lMkZmYWJyaWNpb3Zlcm9uZXo%3D%26sig%3DBqL98EAmMahk39GkKvp43cJeVrvmJ9xP7PRefd2b1QXP%26iat%3D1675206063%26a%3D%257C%257C1001364958%257C%257C%26account%3Dmaverodigital%252Eactivehosted%252Ecom%26email%3Dabl%252FZwJ0kO760VaWJlUBgjpxdzkQNl9LgdxZ9pnzLRY%253D%26s%3Da079cf0f762f0afefcfc28639c68febd%26i%3D1287A1317A21A7883&amp;source=gmail&amp;ust=1675343887005000&amp;usg=AOvVaw2oyKQ0utXv97BAA-asVH7n"><img src="https://maverodigital.img-us6.com/_social_/flat-color-round-linkedin.png" border="0" alt="Linkedin" width="34" style="border:none" class="CToWUd" data-bit="iit"></a></div>
-</td>
-<td width="10" style="display:inline-block!important;font-size:0;width:10px!important">&nbsp;</td>
-<td align="center" valign="middle" width="34" style="display:inline-block!important;font-size:0;width:34px!important"><div style="margin:0;outline:none;padding:0"><a href="https://www.instagram.com/projeto.sapu/" id="m_-7587309070148421964instagram" style="margin:0;outline:none;padding:0;color:#045fb4" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://maverodigital.lt.acemlnb.com/Prod/link-tracker?redirectUrl%3DaHR0cHMlM0ElMkYlMkZ3d3cuaW5zdGFncmFtLmNvbSUyRmZhYnJpY2lvdmVyb25leiUyRg%3D%3D%26sig%3DH2QhS4H1L9vPJxp7tg3kFxsWqKXBjDYFUpk5LK9qVrhj%26iat%3D1675206063%26a%3D%257C%257C1001364958%257C%257C%26account%3Dmaverodigital%252Eactivehosted%252Ecom%26email%3Dabl%252FZwJ0kO760VaWJlUBgjpxdzkQNl9LgdxZ9pnzLRY%253D%26s%3Da079cf0f762f0afefcfc28639c68febd%26i%3D1287A1317A21A7884&amp;source=gmail&amp;ust=1675343887005000&amp;usg=AOvVaw1cgijdt2xq7ASKDwFV33Er"><img src="https://ci3.googleusercontent.com/proxy/IPbV7SaDjyLFeV1onY3ESOVyMn0asp4YpIFpmKWAdJy2vK5rmceE3FyX8DL2J18LoSXPAFEwHQfAprwWs98P0r9bxHOIRskmXCQk0fZROJbYOVgQvfmkDQAsxPo=s0-d-e1-ft#https://maverodigital.img-us6.com/_social_/flat-color-round-instagram.png" border="0" alt="Instagram" width="34" style="border:none" class="CToWUd" data-bit="iit"></a></div>
-</td>
-<td width="10" style="display:inline-block!important;font-size:0;width:10px!important">&nbsp;</td>
-<td align="center" valign="middle" width="34" style="display:inline-block!important;font-size:0;width:34px!important"><div style="margin:0;outline:none;padding:0"><a href="mailto:contato.sapu@gmail.com" id="m_-7587309070148421964email" style="margin:0;outline:none;padding:0;color:#045fb4" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/2B5XpL-BHaenmUUvNI45q6CIop6DFbLkaNwppU3DDrActRTdISn_tVnk8rpGWAa0JGjWT9AdptuvPz7QJqeO9Rndg9o3NAHrqKMyR1rXZGzABt9WAP0HaQ=s0-d-e1-ft#https://maverodigital.img-us6.com/_social_/flat-color-round-email.png" border="0" alt="Email" width="34" style="border:none" class="CToWUd" data-bit="iit"></a></div>
-</td>
-</tr>
-</tbody></table>
-</center> </td>
- </tr>
-</tbody></table>
-</td>
-</tr>
-</tbody></table>
-</td>
-</tr>
-</tbody></table>
-</td>
-</tr>
+                </td>
+              <td width="10" style="display:inline-block!important;font-size:0;width:10px!important">&nbsp;</td>
+          <td align="center" valign="middle" width="34" style="display:inline-block!important;font-size:0;width:34px!important"><div style="margin:0;outline:none;padding:0"><a href="https://www.instagram.com/stratuscloud.br/" id="m_-7587309070148421964instagram" style="margin:0;outline:none;padding:0;color:#045fb4" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://maverodigital.lt.acemlnb.com/Prod/link-tracker?redirectUrl%3DaHR0cHMlM0ElMkYlMkZ3d3cuaW5zdGFncmFtLmNvbSUyRmZhYnJpY2lvdmVyb25leiUyRg%3D%3D%26sig%3DH2QhS4H1L9vPJxp7tg3kFxsWqKXBjDYFUpk5LK9qVrhj%26iat%3D1675206063%26a%3D%257C%257C1001364958%257C%257C%26account%3Dmaverodigital%252Eactivehosted%252Ecom%26email%3Dabl%252FZwJ0kO760VaWJlUBgjpxdzkQNl9LgdxZ9pnzLRY%253D%26s%3Da079cf0f762f0afefcfc28639c68febd%26i%3D1287A1317A21A7884&amp;source=gmail&amp;ust=1675343887005000&amp;usg=AOvVaw1cgijdt2xq7ASKDwFV33Er"><img src="https://ci3.googleusercontent.com/proxy/IPbV7SaDjyLFeV1onY3ESOVyMn0asp4YpIFpmKWAdJy2vK5rmceE3FyX8DL2J18LoSXPAFEwHQfAprwWs98P0r9bxHOIRskmXCQk0fZROJbYOVgQvfmkDQAsxPo=s0-d-e1-ft#https://maverodigital.img-us6.com/_social_/flat-color-round-instagram.png" border="0" alt="Instagram" width="34" style="border:none" class="CToWUd" data-bit="iit"></a></div>
+          </td>
+        <td width="10" style="display:inline-block!important;font-size:0;width:10px!important">&nbsp;</td>
+        <td align="center" valign="middle" width="34" style="display:inline-block!important;font-size:0;width:34px!important"><div style="margin:0;outline:none;padding:0"><a href="mailto:contato@stratuscloud.com.br" id="m_-7587309070148421964email" style="margin:0;outline:none;padding:0;color:#045fb4" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/2B5XpL-BHaenmUUvNI45q6CIop6DFbLkaNwppU3DDrActRTdISn_tVnk8rpGWAa0JGjWT9AdptuvPz7QJqeO9Rndg9o3NAHrqKMyR1rXZGzABt9WAP0HaQ=s0-d-e1-ft#https://maverodigital.img-us6.com/_social_/flat-color-round-email.png" border="0" alt="Email" width="34" style="border:none" class="CToWUd" data-bit="iit"></a></div>
+        </td>
+        </tr>
+        </tbody>
+      </table>
+        </center> 
+      </td>
+        </tr>
+        </tbody>
+        </table>
+      </td>
+        </tr>
+        </tbody>
+          </table>
+            </td>
+          </tr>
+          </tbody>
+          </table>
+            </td>
+          </tr>
             <!-- <span>
               <a href="" target="_blank" style="padding-right:4px;padding-bottom:4px;display:inline-block;">
                 <img height="32" src="https://img.mysignature.io/addons/v2/pinterest_v1_shape3_i.png" alt="pinterest"></a>
@@ -137,7 +155,6 @@
             </td>
           </tr>
      </table>
-
         </td>
         <tr>
           <td width="200" style="font-size: 8px; font-family: Verdana; color: #959595; line-height: 12px; padding-top: 10px; border-top-width: 1px; border-top-style: solid; text-align: justify; border-top-color: #dcdcdc;" colspan="2">
@@ -145,12 +162,10 @@
           </td>
         </tr>
       </table>
-          
-       
-      
+<!-- **************************************************************************************************** --> 
+      <!-- TERMINO modelo email padrao -->
     </section>
   </div>
   <script type="text/javascript" src="scripts/script.js"></script>
 </body>
-
 </html>
