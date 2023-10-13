@@ -27,19 +27,6 @@
             <button type="button" id="login-button">Acessar</button>
         </form>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginForm = document.getElementById("login-form");
-            const loginButton = document.getElementById("login-button");
-
-            loginButton.addEventListener("click", function () {
-                const user = loginForm.querySelector('input[type="text"]').value;
-                const inputPassword = loginForm.querySelector('input[type="password"]').value;
-
-                // Envie os dados de login para o servidor
-                // O servidor (server.js) deve verificar as credenciais e redirecionar conforme necessário.
-            });
-        });
-    </script>
+    <script type="text/javascript" src="../scripts/server.js"></script>
 </body>
 </html>

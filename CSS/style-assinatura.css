@@ -1,11 +1,11 @@
 @font-face {
   font-family: Nasa;
-  src: url(/fonts/NasalizationRg-Regular\ 400.ttf)
+  src: url(../fonts/NasalizationRg-Regular\ 400.ttf)
 }
 
 @font-face {
   font-family: Geometria;
-  src: url(/fonts/Geometria.ttf)
+  src: url(../fonts/Geometria.ttf)
 }
 
 body, html {

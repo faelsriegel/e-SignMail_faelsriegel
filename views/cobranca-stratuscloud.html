@@ -8,13 +8,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Gerador de Email - Stratus Cloud</title>
-  <link rel="stylesheet" type="text/css" href="CSS/style-cobranca.css">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-cobranca.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
         <meta
           name="description"
           content="Stratus Cloud"
         />
-        <link rel="icon" href="img/Logo1.png" />
+        <link rel="icon" href="../img/Logo1.png" />
 </head>
 
 <body>
@@ -58,16 +58,6 @@
         </button>
         </div>
 </div>
-</div>
-<!-- Toggle switch -->
-<<!-- HTML alternativo -->
-<div id="assinatura" style="display: none;">
-  <!-- Conteúdo da assinatura aqui -->
-</div>
-
-<!-- HTML da página "cobranca" -->
-<div id="cobranca" style="display: none;">
-  <!-- Conteúdo da página de cobrança aqui -->
 </div>
 
 <!-- Toggle switch com classe "leftDefault" e atributo "disabled" -->
@@ -494,8 +484,9 @@
                                                                 <td align="left" class="es-infoblock es-m-txt-c"
                                                                     style="padding:0;Margin:0;line-height:14px;font-size:12px;color:#666666">
                                                                     <p
+                                                                    
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:22px;color:#666666;font-size:18px">
-                                                                        Olá ${SacadoNome}</p>
+                                                                        <span id="outNome" style="font-weight:600;color:#132A3A;">Nome Completo</span></p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -513,7 +504,7 @@
                                                                     style="padding:0;Margin:0;font-size:0px"><a
                                                                         style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#0081FF;font-size:14px"><img
                                                                             class="adapt-img"
-                                                                            src="/img/Logo1.png"
+                                                                            src="../img/Logo1.png"
                                                                             alt="Stratus Cloud"
                                                                             style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
                                                                             width="180"
@@ -718,11 +709,8 @@
 
 <!-- **************************************************************************************************** --> 
       <!-- TERMINO modelo email padrao -->
-      </section>
-    
+      </section>    
   </div>
-  <script type="text/javascript" src="scripts/script.js"></script>
-  
+  <script type="text/javascript" src="../scripts/script.js"></script>
 </body>
-
 </html>

@@ -1,11 +1,11 @@
 @font-face {
   font-family: Nasa;
-  src: url(/fonts/NasalizationRg-Regular\ 400.ttf)
+  src: url(../fonts/NasalizationRg-Regular\ 400.ttf)
 }
 
 @font-face {
   font-family: Geometria;
-  src: url(/fonts/Geometria.ttf)
+  src: url(../fonts/Geometria.ttf)
 }
 
 body, html {
@@ -135,7 +135,7 @@ body {
   background-color: #142b3b;
   color: #fff;
   padding: 8rem;
-  background-image: url("/img/blue-green-glow.png");
+  background-image: url("../img/blue-green-glow.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
