@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Emails & Assinaturas - Stratus Cloud</title>
+    <meta name="description" content="Stratus Cloud">
+    <link rel="icon" href="../img/Logo1.png" />
+    <link rel="stylesheet" type="text/css" href="../css/stylelogin.css">
+</head>
+<body>
+    <section>
+        <form id="login-form">
+            <h1>stratuscloud</h1>
+            <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" id="user" required autocomplete="off">
+                <label for="user">Usuario</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" required>
+                <label for="password">Senha</label>
+            </div>
+            <div class="forget">
+                <label for="remember"><input type="checkbox" id="remember"> Mantenha-me Conectado</label>
+            </div>
+            <button type="button" id="login-button">Acessar</button>
+        </form>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginForm = document.getElementById("login-form");
+            const loginButton = document.getElementById("login-button");
+
+            loginButton.addEventListener("click", function () {
+                const user = loginForm.querySelector('input[type="text"]').value;
+                const inputPassword = loginForm.querySelector('input[type="password"]').value;
+
+                // Envie os dados de login para o servidor
+                // O servidor (server.js) deve verificar as credenciais e redirecionar conforme necessário.
+            });
+        });
+    </script>
+</body>
+</html>
