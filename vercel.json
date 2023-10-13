@@ -14,10 +14,7 @@
       {
         "source": "/login.html",
         "destination": "/login.html"
-      },
-      {
-        "source": "/api/**",
-        "destination": "/api/index.js"
       }
     ]
   }
+  

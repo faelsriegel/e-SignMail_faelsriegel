@@ -19,12 +19,12 @@ app.use(session({
 }));
 
 // Rota para a página de login
-app.get('/index.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
+app.get('/login.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/login.html'));
 });
 
 // Rota para processar o formulário de login
-app.post('/index', (req, res) => {
+app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
   const user = users.find((u) => u.username === username && u.password === password);
@@ -34,7 +34,7 @@ app.post('/index', (req, res) => {
     req.session.authenticated = true;
     res.redirect('/main.html');
   } else {
-    res.redirect('/index.html');
+    res.redirect('/login.html');
   }
 });
 
@@ -44,7 +44,7 @@ app.get('/main.html', (req, res) => {
   if (req.session.authenticated) {
     res.sendFile(path.join(__dirname, 'public/main.html'));
   } else {
-    res.redirect('/index.html');
+    res.redirect('/login.html');
   }
 });
 
