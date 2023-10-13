@@ -1,0 +1,23 @@
+{
+    "rewrites": [
+      {
+        "source": "/main.html",
+        "destination": "/login.html",
+        "has": ["cookie:token"],
+        "statusCode": 302
+      },
+      {
+        "source": "/main.html",
+        "destination": "/login.html",
+        "statusCode": 302
+      },
+      {
+        "source": "/login.html",
+        "destination": "/login.html"
+      },
+      {
+        "source": "/api/**",
+        "destination": "/api/index.js"
+      }
+    ]
+  }
