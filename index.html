@@ -28,29 +28,26 @@
             const loginForm = document.getElementById("login-form");
             const loginButton = document.getElementById("login-button");
 
-            const username = "teste"; // Nome de usuário
-            const password = "teste@"; // Senha
-            const rememberCheckbox = document.getElementById("remember");
+            // Senha hardcoded para fins de teste
+            const username = "teste";
+            const password = "teste@";
 
             loginButton.addEventListener("click", function () {
                 const user = loginForm.querySelector('input[type="text"]').value;
                 const inputPassword = loginForm.querySelector('input[type="password"]').value;
 
                 if (user === username && inputPassword === password) {
-                    if (rememberCheckbox.checked) {
-                        // Se a caixa de "Mantenha-me Conectado" estiver marcada, você pode adicionar um código aqui para lembrar o usuário.
-                    }
                     window.location.href = "main.html"; // Redireciona para a página principal após o login bem-sucedido.
                 } else {
                     alert("Credenciais inválidas. Tente novamente.");
                 }
             });
+
+            // Verifique se o usuário está autenticado antes de acessar "main.html"
+            if (window.location.href.includes("main.html") && (username !== "teste" || password !== "teste@")) {
+                window.location.href = "index.html"; // Redirecione para a página de login
+            }
         });
     </script>
 </body>
 </html>
-
-
-
-
-
