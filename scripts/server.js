@@ -11,11 +11,11 @@ const users = [
 
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/login.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/login.html'));
+app.get('/index.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-app.post('/login', (req, res) => {
+app.post('/index', (req, res) => {
   const { username, password } = req.body;
 
   const user = users.find((u) => u.username === username && u.password === password);
@@ -24,7 +24,7 @@ app.post('/login', (req, res) => {
     // Adicione um parâmetro de autenticação à URL
     res.redirect(302, '/main.html?authenticated=true');
   } else {
-    res.redirect('/login.html');
+    res.redirect('/index.html');
   }
 });
 
@@ -34,7 +34,7 @@ app.get('/main.html', (req, res) => {
   if (isAuthenticated) {
     res.sendFile(path.join(__dirname, 'public/main.html'));
   } else {
-    res.redirect('/login.html');
+    res.redirect('/index.html');
   }
 });
 
