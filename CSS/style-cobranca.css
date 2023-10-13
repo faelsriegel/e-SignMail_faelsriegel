@@ -8,8 +8,41 @@
   src: url(/fonts/Geometria.ttf)
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  overflow: hidden;
+  background: linear-gradient(86deg, rgb(9, 27, 41) 40%, rgba(14, 78, 145, 0.8) 73%, rgba(31, 121, 213, 0.5) 100%), url("img/background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+h1 {
+  font-family: Geometria;
+  padding-top: 60px;
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 1.2;
+  text-align: left;
+}
+
+h2 {
+  font-family: Nasa;
+  padding-bottom: 60px;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1.2;
+  text-align: left;
 }
 
 .colunas {

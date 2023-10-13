@@ -1,39 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Gerador de Assinaturas - Stratus Cloud</title>
-  <link rel="stylesheet" type="text/css" href="CSS/style.css">
-      <meta
-          name="description"
-          content="Stratus Cloud"
-        />
-        <link rel="icon" href="img/Logo1.png" />
+    <link rel="stylesheet" type="text/css" href="CSS/stylelogin.css">
 </head>
 <body>
-  <body>
-    <section class="container">
-      <div class="titulo container">
-        <div class="titulo-espaco">
-          <h1> e-SignMail Generator</h1>
-          <h2>stratus cloud</h2>
-          <p> Selecione a Empresa que Deseja. </p>
-        </div>
-        <div>
-          <img class="email-icon" src="img/Messages-bro.png" alt="Email Icon Principal">
-        </div>
-      </div>
+    <section>
+        <form id="login-form">
+            <h1>stratuscloud</h1>
+            <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" id="user" required autocomplete="off">
+                <label for="user">Usuario</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" required>
+                <label for="password">Senha</label>
+            </div>
+            <div class="forget">
+                <label for="remember"><input type="checkbox" id="remember"> Mantenha-me Conectado</label>
+            </div>
+            <button type="button" id="login-button">Acessar</button>
+        </form>
     </section>
-    <section class="container empresas">
-      <div class="logo">
-        <a href="assinatura-stratuscloud.html"><img src="img/Logo1.png" alt="Logo Stratus">
-      </div>
-      <!-- <div class="logo">
-        <a href="assinatura-stratuscloud.html"><img src="img/Logo2.png" alt="Logo Slice">
-      </div> -->
-      <div class="logo">
-        <a href="assinatura-sapu.html"><img src="img/Logo3.png" alt="Logo Sapu">
-      </div>
-    </section>
-  </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginForm = document.getElementById("login-form");
+            const loginButton = document.getElementById("login-button");
+
+            const username = "teste"; // Nome de usuário
+            const password = "teste@"; // Senha
+            const rememberCheckbox = document.getElementById("remember");
+
+            loginButton.addEventListener("click", function () {
+                const user = loginForm.querySelector('input[type="text"]').value;
+                const inputPassword = loginForm.querySelector('input[type="password"]').value;
+
+                if (user === username && inputPassword === password) {
+                    if (rememberCheckbox.checked) {
+                        // Se a caixa de "Mantenha-me Conectado" estiver marcada, você pode adicionar um código aqui para lembrar o usuário.
+                    }
+                    window.location.href = "main.html"; // Redireciona para a página principal após o login bem-sucedido.
+                } else {
+                    alert("Credenciais inválidas. Tente novamente.");
+                }
+            });
+        });
+    </script>
+</body>
 </html>
+
+
+
+
+
