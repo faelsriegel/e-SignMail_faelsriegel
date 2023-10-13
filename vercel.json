@@ -3,13 +3,11 @@
       {
         "source": "/main.html",
         "destination": "/login.html",
-        "has": ["cookie:token"],
-        "statusCode": 302
+        "has": ["cookie:token"]
       },
       {
         "source": "/main.html",
-        "destination": "/login.html",
-        "statusCode": 302
+        "destination": "/login.html"
       },
       {
         "source": "/login.html",
@@ -17,4 +15,3 @@
       }
     ]
   }
-  
