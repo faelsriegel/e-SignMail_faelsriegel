@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 5500; // Alterado para a porta 5500
+const port = process.env.PORT || 5500;
+
 const path = require('path');
-const session = require('express-session'); // Importe a biblioteca
+const session = require('express-session');
 
 const users = [
-  { username: 'teste', password: 'teste@' },
+  { username: 'teste', password: 'teste@' }
   // Adicione mais usuários conforme necessário
 ];
 
@@ -13,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Configuração de sessão
 app.use(session({
-  secret: 'sua_chave_secreta', // Substitua por uma chave secreta segura
+  secret: 'teste', // Substitua por uma chave secreta segura
   resave: false,
   saveUninitialized: true,
 }));
@@ -32,7 +33,7 @@ app.post('/login', (req, res) => {
   if (user) {
     // Defina a sessão como autenticada
     req.session.authenticated = true;
-    res.redirect('/main.html');
+    res.redirect(302, '/main.html'); // Redirecionamento com status code 302
   } else {
     res.redirect('/login.html');
   }
