@@ -92,7 +92,6 @@ h5 {
 .logo:hover {
   border: 1px solid #142b3b;
   transition: all .4s ease-in-out;
-  transform: scale(1.05);
 }
 
 .empresas div {
