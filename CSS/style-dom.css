@@ -107,3 +107,10 @@ input:focus {
   border: 1px solid #ccc; /* Adiciona uma borda apenas para fins de visualização */
   max-height: 500px; /* Altura máxima desejada */
 }
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff; /* Cor do texto do link - você pode alterar a cor conforme necessário */
+  font-size: 16px; /* Aumentar o tamanho da fonte conforme necessário */
+  font-family: "Geometria";
+}
