@@ -51,22 +51,6 @@ h2 {
   justify-content: center;
 }
 
-.titulo-formulario {
-  color: #ffffff;
-  font-weight: 300;
-  padding-bottom: 50px;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 24px;
-  font-family: Geometria;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; /* Defina a cor de fundo desejada */
-  z-index: 1000; /* Certifique-se de que ele está na frente de outros elementos */
-}
-
 .aviso {
   font-size: 14px;
   padding-top: 10px;

@@ -45,6 +45,13 @@ h2 {
   text-align: left;
 }
 
+h5 {
+    font-family: Nasa;
+    text-align: center;
+    font-size: 24px;
+    padding-right: 20px;
+}
+
 .imagem {
   position: absolute;
   top: 30%;
@@ -145,4 +152,95 @@ body {
   body {
     padding: 0;
   }
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+  color: #fff; /* Cor do texto no cabeçalho */
+  padding: 60px 0; /* Espaçamento interno no cabeçalho */
+  font-weight: 300;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  font-family: Geometria;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -20; /* Certifique-se de que ele está na frente de outros elementos */
+}
+
+.titulo-formulario {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-weight: 300;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+  font-family: Geometria;
+  position: fixed;
+  top: 0;
+  left: 20;
+  width: 100%;
+  z-index: -20;
+}
+
+.titulo-formulario h3 {
+  margin: 0; /* Remova a margem padrão do h3 para garantir que ele não cause desalinhamento */
+}
+
+.titulo-formulario h5 {
+  margin: 0;
+}
+
+/* Estilos para o menu de navegação */
+.navbar {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333; /* Cor do texto do link */
+}
+
+/* Estilos para o dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: #f9f9f9; /* Cor de fundo do dropdown */
+  text-align: left;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333; /* Cor do texto do link do dropdown */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
