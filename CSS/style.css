@@ -89,8 +89,9 @@ h5 {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+
 .logo:hover {
-  border: 1px solid #142b3b;
+  border: 2px solid #142b3b;
   transition: all .4s ease-in-out;
 }
 
@@ -105,6 +106,11 @@ h5 {
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.empresasmain img {
+  max-width: 280px;
+  padding: 32px;
 }
 
 .container {
