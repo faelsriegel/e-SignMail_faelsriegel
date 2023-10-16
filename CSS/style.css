@@ -47,7 +47,6 @@ h2 {
 
 h5 {
     font-family: Nasa;
-    text-align: center;
     font-size: 24px;
     padding-right: 20px;
 }
@@ -197,11 +196,13 @@ header {
   margin: 0;
 }
 
-/* Estilos para o menu de navegação */
 .navbar {
   text-align: center;
   padding: 20px 0;
+  position: relative; /* Defina a posição como relativa */
+  z-index: 10000; /* Defina um valor alto de z-index */
 }
+
 
 .navbar ul {
   list-style: none;
@@ -216,7 +217,7 @@ header {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #333; /* Cor do texto do link */
+  color: #fff; /* Cor do texto do link definida como branco (#fff) */
 }
 
 /* Estilos para o dropdown */
@@ -238,7 +239,7 @@ header {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #333; /* Cor do texto do link do dropdown */
+  color: #fff; /* Cor do texto do link do dropdown definida como branco (#fff) */
 }
 
 .dropdown:hover .dropdown-content {
