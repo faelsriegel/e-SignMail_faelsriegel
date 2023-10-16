@@ -45,6 +45,15 @@ h2 {
   text-align: left;
 }
 
+h4 {
+  font-family: Geometria;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+}
+
 h5 {
     font-family: Nasa;
     font-size: 24px;
@@ -151,23 +160,6 @@ body {
   body {
     padding: 0;
   }
-}
-
-/* Estilos para o cabeçalho (header) */
-header {
-  color: #fff; /* Cor do texto no cabeçalho */
-  padding: 60px 0; /* Espaçamento interno no cabeçalho */
-  font-weight: 300;
-  padding-bottom: 50px;
-  text-align: center;
-  padding-top: 40px;
-  font-size: 20px;
-  font-family: Geometria;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -20; /* Certifique-se de que ele está na frente de outros elementos */
 }
 
 .titulo-formulario {

@@ -1,32 +1,3 @@
-@font-face {
-  font-family: Nasa;
-  src: url(../fonts/NasalizationRg-Regular\ 400.ttf)
-}
-
-@font-face {
-  font-family: Geometria;
-  src: url(../fonts/Geometria.ttf)
-}
-
-/* body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
-body {
-  background: linear-gradient(86deg, rgb(9, 27, 41) 40%, rgba(14, 78, 145, 0.8) 73%, rgba(31, 121, 213, 0.5) 100%), url("img/background.jpg");
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  font-family: "Geometria", Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-}
-
 .colunas {
   display: flex;
   align-items: center;
@@ -67,32 +38,6 @@ input:focus {
   font-family: Geometria;
 }
 
-/* Estilização do contêiner da assinatura */
-.cobranca-final {
-  background-color: #ffffff;
-  border-radius: 3px;
-  padding: 5px;
-  margin-left: 70px;
-  font-family: "Geometria", sans-serif;
-  max-width: 600px; /* Largura desejada */
-  overflow-x: auto;
-  overflow-y: auto; /* Adiciona barras de rolagem vertical quando o conteúdo for maior do que a altura máxima */
-  border: 1px solid #ccc; /* Adiciona uma borda apenas para fins de visualização */
-  max-height: 500px; /* Altura máxima desejada */
-}
-
-
-/* .btn-copiar {
-  background: linear-gradient(356deg, #6cc5e4 0%, rgba(14, 78, 145, 1) 73%, rgb(7, 43, 78) 100%);
-  color: #ffffff;
-  border: 0.4px;
-  border-radius: 10px;
-  width: 360px;
-  height: 40px;
-  letter-spacing: -1px;
-  font-family: Geometria;
-} */
-
 .btn-copiar:hover {
   cursor: pointer;
   transition: all .4s ease-in-out;
@@ -119,7 +64,7 @@ input:focus {
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Arial";
+  font-family: "Geometria";
   position: relative;
   text-transform: uppercase;
   color: transparent;
@@ -144,125 +89,21 @@ input:focus {
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
-h4 {
-  font-family: Geometria;
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.2;
-  text-align: left;
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+  }
 }
 
-.switch {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 5em;
-  height: 2.5em;
-}
-
-/* Hide default HTML checkbox */
-.switch .cb {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.toggle {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  background-color: #373737;
-  border-radius: .1em;
-  transition: .4s;
-  text-transform: uppercase;
-  font-weight: 700;
-  overflow: hidden;
-  box-shadow: -.3em 0 0 0 #373737,-.3em .3em 0 0 #373737,.3em 0 0 0 #373737,.3em .3em 0 0 #373737,0 .3em 0 0 #373737;
-}
-
-.toggle > .left {
-  position: absolute;
-  display: flex;
-  width: 50%;
-  height: 88%;
-  background-color: #f3f3f3;
-  color: #373737;
-  left: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  transform-origin: right;
-  transform: rotateX(10deg);
-  transform-style: preserve-3d;
-  transition: all 150ms;
-}
-
-.left::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgb(206, 206, 206);
-  transform-origin: center left;
-  transform: rotateY(90deg);
-}
-
-.left::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgb(112, 112, 112);
-  transform-origin: center bottom;
-  transform: rotateX(90deg);
-}
-
-.toggle > .right {
-  position: absolute;
-  display: flex;
-  width: 50%;
-  height: 88%;
-  background-color: #f3f3f3;
-  color: rgb(206, 206, 206);
-  right: 1px;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  transform-origin: left;
-  transform: rotateX(10deg) rotateY(-45deg);
-  transform-style: preserve-3d;
-  transition: all 150ms;
-}
-
-.right::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgb(206, 206, 206);
-  transform-origin: center right;
-  transform: rotateY(-90deg);
-}
-
-.right::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgb(112, 112, 112);
-  transform-origin: center bottom;
-  transform: rotateX(90deg);
-}
-
-.switch input:checked + .toggle > .left {
-  transform: rotateX(10deg) rotateY(45deg);
-  color: rgb(206, 206, 206);
-}
-
-.switch input:checked + .toggle > .right {
-  transform: rotateX(10deg) rotateY(0deg);
-  color: #487bdb;
+.cobranca-final {
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin-top: 100px;
+  margin-left: 70px;
+  font-family: "Geometria";
+  max-width: 680px; /* Largura desejada */
+  overflow-x: auto;
+  overflow-y: auto; /* Adiciona barras de rolagem vertical quando o conteúdo for maior do que a altura máxima */
+  border: 1px solid #ccc; /* Adiciona uma borda apenas para fins de visualização */
+  max-height: 500px; /* Altura máxima desejada */
 }
