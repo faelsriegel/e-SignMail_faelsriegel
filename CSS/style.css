@@ -236,7 +236,6 @@ header {
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  background-color: #f9f9f9; /* Cor de fundo do dropdown */
   text-align: left;
   top: 100%; /* Posicione o dropdown abaixo do item de menu */
 }
