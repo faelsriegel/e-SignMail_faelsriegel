@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Verifique as credenciais de usuário e senha
         if (user === "teste" && inputPassword === "teste") {
             // Credenciais corretas, redirecione para a página principal
-            window.location.href = "/main.html";
+            window.location.href = "views/main.html";
         } else {
             // Credenciais incorretas, exiba uma mensagem de erro
             alert("Credenciais inválidas. Tente novamente.");

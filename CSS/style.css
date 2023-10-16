@@ -222,21 +222,28 @@ header {
 .navbar ul li a {
   text-decoration: none;
   color: #fff; /* Cor do texto do link - você pode alterar a cor conforme necessário */
-  font-size: 18px; /* Aumentar o tamanho da fonte conforme necessário */
+  font-size: 16px; /* Aumentar o tamanho da fonte conforme necessário */
 }
 
+.navbar ul li a:hover {
+  color: #10ACE9; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos para o dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1; /* Aumente o z-index para que o dropdown apareça na frente de outros elementos */
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   min-width: 160px;
-  z-index: 1;
+  z-index: 1000; /* Aumente o z-index do dropdown para que ele apareça na frente de outros elementos */
   text-align: left;
   top: 100%; /* Posicione o dropdown abaixo do item de menu */
+  left: 0; /* Alinhe o dropdown à esquerda */
 }
 
 .dropdown-content a {
