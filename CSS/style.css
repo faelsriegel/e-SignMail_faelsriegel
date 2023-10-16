@@ -196,14 +196,18 @@ header {
   margin: 0;
 }
 
+/* Estilos para o menu de navegação */
 .navbar {
-  text-align: center;
-  padding: 20px 0;
-  position: relative; /* Defina a posição como relativa */
-  z-index: 10000; /* Defina um valor alto de z-index */
+  position: fixed; /* Tornar o menu de navegação fixo no topo */
+  top: 10px; /* Alinhar o menu com um espaço de 10 pixels de padding-top */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center; /* Centralizar o texto no menu */
+  padding: 20px 0; /* Adicionar um espaçamento interno */
 }
 
-
+/* Estilos para os itens de menu */
 .navbar ul {
   list-style: none;
   padding: 0;
@@ -217,7 +221,8 @@ header {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #fff; /* Cor do texto do link definida como branco (#fff) */
+  color: #fff; /* Cor do texto do link - você pode alterar a cor conforme necessário */
+  font-size: 18px; /* Aumentar o tamanho da fonte conforme necessário */
 }
 
 /* Estilos para o dropdown */
@@ -231,7 +236,7 @@ header {
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  background-color: #f9f9f9; /* Cor de fundo do dropdown */
+  background-color: #133040; /* Cor de fundo do dropdown */
   text-align: left;
 }
 
@@ -239,7 +244,7 @@ header {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #fff; /* Cor do texto do link do dropdown definida como branco (#fff) */
+  color: #333; /* Cor do texto do link do dropdown */
 }
 
 .dropdown:hover .dropdown-content {
