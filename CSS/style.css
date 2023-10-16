@@ -225,7 +225,6 @@ header {
   font-size: 18px; /* Aumentar o tamanho da fonte conforme necessário */
 }
 
-/* Estilos para o dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -250,3 +249,4 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
