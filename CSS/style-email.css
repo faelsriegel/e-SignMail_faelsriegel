@@ -1,0 +1,152 @@
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #144659; /* White background */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.dropdown-content a {
+  color: #2c3e50; /* Dark text color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ecf0f1; /* Light gray background on hover */
+  border-radius: 5%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.colunas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aviso {
+  font-size: 14px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: Geometria;
+}
+
+input {
+  height: 30px;
+  width: 350px;
+  margin-top: 5px;
+  border-radius: 8px;
+  padding-left: 10px;
+  color: black;
+  border: 0.3px solid #0e4e91;
+  font-family: Geometria;
+}
+
+input:hover {
+  border: 0.4px solid #85bffc;
+  transition: all .4s ease-in-out;
+  transform: scale(1.01);
+}
+
+input:focus {
+  background-color: #b5c6e4;
+}
+
+::placeholder {
+  color: black;
+  font-size: 15px;
+  font-family: Geometria;
+}
+
+.btn-copiar:hover {
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  transform: scale(1.01);
+}
+
+.areaDemo {
+  padding-top: 15px;
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Geometria";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+  }
+}
+
+.cobranca-final {
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin-top: 100px;
+  margin-left: 70px;
+  font-family: "Geometria";
+  max-width: 665px; /* Largura desejada */
+  overflow-x: auto;
+  overflow-y: auto; /* Adiciona barras de rolagem vertical quando o conteúdo for maior do que a altura máxima */
+  border: 1px solid #ccc; /* Adiciona uma borda apenas para fins de visualização */
+  max-height: 500px; /* Altura máxima desejada */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff; /* Cor do texto do link - você pode alterar a cor conforme necessário */
+  font-size: 16px; /* Aumentar o tamanho da fonte conforme necessário */
+  font-family: "Geometria";
+}
+
+* Add this CSS for the dropdown menu text color */
+.navbar .dropdown-content a {
+  color: #2c3e50; /* Dark text color */
+}
+
+/* Add this CSS for the dropdown menu text color on hover */
+.navbar .dropdown-content a:hover {
+  background-color: #ecf0f1; /* Light gray background on hover */
+}
