@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const inputPassword = loginForm.querySelector('input[type="password"]').value;
 
         // Verifique as credenciais de usuário e senha
-        if (user === "admin" && inputPassword === "stratus") {
+        if (user === "admin" && inputPassword === "admin") {
             // Credenciais corretas, redirecione para a página principal
             window.location.href = "views/main.html";
         } else {
